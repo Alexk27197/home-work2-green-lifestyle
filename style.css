@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  padding: 10px 20px;
+}
+header div {
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+header i {
+  font-size: 24px;
+  padding-top: 4px;
+}
+header h1 {
+  padding-left: 5px;
+}
+/* Section 1 style*/
+.container {
+  width: 100%;
+}
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/leafe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.left-side h1 {
+  font-size: 40px;
+  max-width: max-content;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.left-side h3 {
+  font-size: 24px;
+  max-width: max-content;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.right-side {
+  width: 280px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  height: 300px;
+}
+.content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content form input {
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.content form button {
+  padding: 10px 40px;
+  border: 0;
+  color: white;
+  font-size: 20px;
+  background-color: green;
+}
+
+/* Section 2 style */
+.section2 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section2 h1 {
+  margin: 40px;
+  font-size: 40px;
+}
+.card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 20px 0;
+}
+.card h2 {
+  margin-bottom: 5px;
+}
+/* Section 3 style */
+.section3 {
+  background-color: #f0e8e5;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 200px;
+}
+.section3 h1 {
+  margin: 40px;
+  font-size: 40px;
+}
+.section3 p {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+/* Section 4 style */
+.section4 {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section4 p {
+  text-align: center;
+}
+.section4 .review-card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 50%;
+  gap: 10px;
+  padding: 0 40px;
+  border-right: 1px solid;
+}
+.section4 .review-card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 50%;
+  gap: 10px;
+  padding: 0 40px;
+}
+/* footer style */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: black;
+  color: white;
+  flex-wrap: wrap;
+}
+footer .logo {
+  display: flex;
+  align-items: center;
+}
+.logo h1 {
+  padding-left: 5px;
+}
+.logo i {
+  font-size: 24px;
+  padding-top: 4px;
+}
+
+@media (max-width: 612px) {
+  .card-container {
+    gap: 20px;
+    padding: 0;
+  }
+  .card {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .card img {
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .section3 {
+    padding: 0px 50px;
+  }
+  .section4 {
+    min-height: 100vh;
+  }
+  .section4 img {
+    width: 60px;
+    height: 60px;
+  }
+  .section4 .review-card1 {
+    border: 0;
+  }
+}
+@media (max-width: 412px) {
+  .card-container {
+    padding: 10px;
+  }
+  .section3 h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .section4 {
+    flex-direction: column;
+  }
+  .section4 .review-card1 {
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .section4 .review-card1 h2 {
+    order: 1;
+  }
+  .section4 .review-card1 p {
+    order: 2;
+  }
+  .section4 .review-card2 {
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .section4 .review-card2 h2 {
+    order: 1;
+  }
+  .section4 .review-card2 p {
+    order: 2;
+  }
+}
